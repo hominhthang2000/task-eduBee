@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+
+    <!-- Website Title -->
+    <title>Sign Up </title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+    <!-- css for icon font Awesome    -->
+    <style type="text/css">
+        .input-register{
+            position: relative;
+        }
+
+        .input-register i {
+        position: absolute;
+        left: 25px;
+        top: 12px;
+        color: #000000;
+        }
+        
+        .input-register input,
+        .input-register input:focus {
+        padding: 8px 8px 8px 40px;
+        border: 1px solid rgba(68, 68, 68, 0.6);
+        outline: none;}
+
+        .combo-register select, .input-class input{
+            border: 1px solid rgba(68, 68, 68, 0.6);
+        }
+        .logo-image{
+            text-decoration: none;
+        }
+    </style>
+	
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="ex-2-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="margin-bottom: 50px;">
+                    <h1>Trang Đăng Ký Tài Khoản</h1>
+                    <br>
+                    <!-- Sign Up Form -->
+                    <div class="form-container">
+                        <form id="signUpForm" data-toggle="validator" data-focus="false">
+                            <div class="row">
+                                <div class="col-sm-6 form-group login-center input-register">
+                                    <input type="text" name="username_register" placeholder="Tên đăng nhập" class="form-control">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="col-sm-6 form-group combo-register">
+                                    <select class="form-control">
+                                        <option class="hidden" name="province" selected disabled>Tỉnh/Thành</option>
+                                        <option value="1">Quảng Nam</option>
+                                        <option value="1">Đà Nẵng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 form-group input-register">
+                                    <input type="text" name="password_register" placeholder="Mật khẩu" class="form-control">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="col-sm-6 form-group combo-register">
+                                    <select class="form-control">
+                                        <option class="hidden" name="district" selected disabled>Quận/Huyện</option>
+                                        <option value="1">Quận Hải Châu</option>
+                                        <option value="1">Quận Cẩm Lệ </option>
+                                        <option value="1">Quận Thanh Khê </option>
+                                        <option value="1">Quận Liên Chiểu</option>
+                                        <option value="1">Quận Sơn Trà</option>
+                                        <option value="1">Huyện Hòa Vang</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 form-group input-register">
+                                    <input type="text" name="fullName" placeholder="Họ và tên" class="form-control">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="col-sm-6 form-group combo-register">
+                                    <select class="form-control">
+                                        <option class="hidden" name="wards" selected disabled>Phường/Xã</option>
+                                        <option value="1">Hòa Bắc</option>
+                                        <option value="1">Hòa Liên </option>
+                                        <option value="1">Hòa Ninh </option>
+                                        <option value="1">Hòa Châu</option>
+                                        <option value="1">Hòa Tiến</option>
+                                        <option value="1">Hòa Khương</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 form-group input-register">
+                                    <input type="text" name="phoneNumber" placeholder="Số điện thoại" class="form-control">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="col-sm-6 form-group combo-register">
+                                    <select class="form-control">
+                                        <option class="hidden" name="school" selected disabled>Trường</option>
+                                        <option value="1">Trường  1</option>
+                                        <option value="1">Trường  2</option>
+                                        <option value="1">Trường  1</option>
+                                        <option value="1">Trường  2</option>
+                                        <option value="1">Trường  1</option>
+                                        <option value="1">Trường  2</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 form-group input-register">
+                                    <input type="text" name="email" placeholder="Email" class="form-control">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="col-sm-6 form-group input-class">
+                                    <input type="text" name="class" placeholder="Lớp" class="form-control">
+                                </div>
+                            </div>
+            
+                            <div class="form-group space-bw">
+                                <div class="form-group">
+                                    <button type="submit" class="form-control-submit-button">Đăng ký</button>
+                                </div>
+                            </div>
+                            <div class="form-message">
+                                <div id="smsgSubmit" class="h3 text-center hidden"></div>
+                            </div>
+                        </form>
+                        <p style="color: black;">Bạn đã có tài khoản? &ensp;<a class="blue" href="log-in.html">Đăng nhập ngay</a></p> 
+                    </div> <!-- end of form container -->
+                    <!-- end of sign up form -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </header> <!-- end of ex-header -->
+    <!-- end of header -->
+
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    
+</body>
+</html>
